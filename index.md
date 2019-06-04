@@ -4,21 +4,21 @@ Core Banking Design (CBD) commonly used schema definitions. Please raise a suppo
 
  Alternatively you can always create a pull request as this is just a markdown file.
 
-**Table of Contents**
+<a name="home"/>
 
-[TOCM]
-
-[TOC]
-
-
-Data is grouped into the following core resource contexts:
-* **Applicant** (applicant) : [link](#applicant)
-* **Financial Profile** (financialProfile):  [link](#financialProfile)
-* **Loan Facility** (facilities) : [link](#facilities)
-* **Property** (collaterals, purchaseProperty):  [link](#property)
+##### Table of Contents  
+[applicant](#applicant)  
+[financialProfile](#financialProfile)  
+[facility](#facility)  
+[property](#property)  
+  
 
 ---
-# Applicant Models
+<a name="applicant"/>
+
+[up](#home) 
+
+# Applicant Models 
 ## address
 
 ```yaml
@@ -40,7 +40,7 @@ properties:
     type: string
     description: Purpose of address (eg. Work)
   occupancyType:
-    type: stringA
+    type: string
     description: Occupancy Type of address (eg. Boarding, Company Owned, Owner Mortgage).
     pattern: '^[a-zA-Z_ ]*$'
   propertyName:
@@ -320,6 +320,11 @@ properties:
       Document Expiry Date. Passport - DD/MM/YYYY. Medicare - The expected format for regular green Medicare cards is MM/YYYY, and for blue and yellow Medicare cards, the expected format is DD/MM/YYYY.
 ```
 ---
+
+<a name="financialProfile"/>
+
+[up](#home) 
+
 # financialProfile 
 ## asset
 ```yaml
@@ -550,7 +555,12 @@ properties:
 ```
 ---
 
+<a name="facility"/>
+
+[up](#home) 
+
 # Facility 
+
 ## funding
 ```yaml
 type: object
@@ -718,7 +728,11 @@ properties:
     description: True if this loan variant applies to the facility.
 ```
 ---
-# Property
+<a name="property"/>
+
+[up](#home) 
+
+# Property 
 
 ## collateral
 ```yaml
