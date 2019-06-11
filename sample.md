@@ -24,6 +24,7 @@ Core Banking Design (CBD) commonly used schema definitions. Please raise a suppo
 # Applicant Models 
 ## address
 
+
 ```yaml
 type: object
 properties:

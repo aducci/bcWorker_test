@@ -1,0 +1,71 @@
+type: object
+properties:
+  type:
+    type: string
+    description: type of address.
+    pattern: '^[a-zA-Z_ ]*$'
+  startDate:
+    description: Start Date of address residence. Type requires format of YYYY-MM-DD.
+    allOf:
+      - $ref: 'ISODate.yaml'
+  endDate:
+    description: End Date of address residence. Type requires format of YYYY-MM-DD.
+    allOf:
+      - $ref: 'ISODate.yaml'
+  purpose:
+    type: string
+    description: Purpose of address (eg. Work)
+  occupancyType:
+    type: string
+    description: Occupancy Type of address (eg. Boarding, Company Owned, Owner
+      Mortgage).
+    pattern: '^[a-zA-Z_ ]*$'
+  propertyName:
+    type: string
+    description: Building Name.
+  unitType:
+    type: string
+    description: Building Type (eg. APT).
+    pattern: '^[a-zA-Z_ ]*$'
+  lotNumber:
+    type: string
+    description: Lot Number.
+  unitNumber:
+    type: string
+    description: Unit Number.
+  levelNumber:
+    type: string
+    description: Floor Number.
+  streetNumber:
+    type: string
+    description: Address Number in street.
+  streetName:
+    type: string
+    description: Street Name
+  streetType:
+    type: string
+    description: Type of street (eg. RD, ST).
+    pattern: '^[a-zA-Z_ ]*$'
+  streetTypeSuffix:
+    type: string
+    description: Street Type Suffix (eg. CN).
+    pattern: '^[a-zA-Z_ ]*$'
+  townSuburb:
+    type: string
+    description: City.
+  postcode:
+    type: string
+    description: Postcode.
+  poBoxNumber:
+    type: string
+    description: Post Office Box Number.
+  poBoxDeliveryType:
+    type: string
+    description: Post Office Box Delivery Type.
+    pattern: '^[a-zA-Z_ ]*$'
+  state:
+    type: string
+    description: State Code (eg. VIC).
+    pattern: '^[a-zA-Z_ ]*$'
+  country:
+    $ref: 'ISOCountryCode.yaml'

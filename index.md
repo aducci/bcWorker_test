@@ -18,6 +18,8 @@ Core Banking Design (CBD) commonly used schema definitions. Please raise a suppo
 
 [up](#home) 
 
+![applicant](/img/applicant.png)
+
 # Applicant Models 
 ## address
 
